@@ -1,0 +1,71 @@
+[window]
+width = 60                           # Width of the launcher window in pixels
+height = 60                          # Height of the launcher window in pixels
+anchor = "center"                     # Window position: "center", "top", "bottom", "left", "right", "top_left", "top_right", "bottom_left", "bottom_right"
+margin_top = 200                        # Margin from the top of the screen in pixels
+margin_bottom = 200                     # Margin from the bottom of the screen in pixels
+margin_left = 300                       # Margin from the left of the screen in pixels
+margin_right = 300                      # Margin from the right of the screen in pixels
+show_descriptions = false             # Show application descriptions in the list
+show_paths = false                    # Show application paths in the list
+show_icons = true                     # Show application icons in the list
+show_search = true                    # Show the search bar
+show_actions = false                  # Show additional application actions in the list
+show_border = false                    # Show window border
+border_width = 50                    # Border width in pixels
+border = 25
+border_color = "#193885"
+color_theme = "custom"                  # Which theme will be used. Possible values: custom, gtk, light, dark, dracula, nord, solarized_light, solarized_dark, gruvbox_light, gruvbox_dark, catppuccin_latte, catppuccin_frappe, catppuccin_macchiato, catppuccin_mocha, tokyo_night, tokyo_night_storm, tokyo_night_light, kanagawa_wave, kanagawa_dragon, kanagawa_lotus, moonfly, nightfly, oxocarbon, ferra
+max_entries = 50                      # Maximum number of entries to show in the list
+antialiasing = false                  # Enable antialiasing
+corner_radius = 25
+border_radius = 25
+window = 100
+
+[appearance]
+border_size = 25
+border_color = "#ffffff"
+corner_radius = 10
+border_radius = 5
+background_color = "#222222"
+radius = 20
+
+[theme.colors]
+background = "#0f0f0f"                # Background color
+#background = "#4F0000"
+#background = "rgba(0, 0, 0, 0.5)"
+text = "#e0e0e0"                      # Text color
+primary = "#d41313"                   # Color of the selected item
+success = "#05e177"                   # Currently not used, but will be provided for future use
+danger = "#cf2e2e"                    # Currently not used, but will be used for the error overlay in future
+
+[theme.corners]
+window = 50                           # Window corner radius in pixels
+search = 25                            # Search bar corner radius in pixels
+list_item = 15                         # List item corner radius in pixels
+
+[theme.spacing]
+search_margin = 10.0                  # Search bar outer margin in pixels
+search_padding = 12.0                 # Search bar inner padding in pixels
+button_height = 50.0                  # The height of the item (application entry) in pixels
+button_spacing = 5.0                  # The spacing between the items of the application list in pixels
+list_padding = 10.0                   # Padding of the item_list in pixels
+query_list_spacing = 10.0             # Spacing between the application list and the search input in pixels
+
+[theme.typography]
+description_height_denominator = 3.0  # These are sensible defaults, it isn't recommended to change them. If you change them you are on your own.
+button_description_padding = 8.0      # These are sensible defaults, it isn't recommended to change them. If you change them you are on your own.
+button_title_padding = 20.0           # These are sensible defaults, it isn't recommended to change them. If you change them you are on your own.
+
+[debug]
+disable_auto_focus = false            # Disable automatic keyboard focus
+
+[calculator]
+enabled = false                       # Enable/disable calculator functionality
+
+[web_search]
+enabled = false                       # Enable/disable web search functionality
+engine = "duckduckgo"                 # Use preset engine name
+prefixes = []                         # Disables all custom search prefixes
+
+# Currently the custom websearch as described does not work. Will be reimplemented in future.

@@ -1,0 +1,20 @@
+[font]
+#size = 12.0
+#
+#[font.normal]
+#family = "MesloLGS NF"
+#style = "Regular"
+
+[colors.primary]
+background = "#300505"
+#foreground = "#"
+
+[window]
+#padding.x = 10
+#padding.y = 10
+opacity = 0.4
+
+#[[keyboard.bindings]]
+#key = "T"
+#mods = "Control"
+#action = "CreateNewWindow"

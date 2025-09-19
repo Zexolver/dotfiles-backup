@@ -1,0 +1,106 @@
+[general]
+layouts = ["tile", "floating"]
+cursor-warps = true
+#focus-follows-mouse = false
+# ^Incorrect Somehow??^
+
+# screen Stuff
+nmaster = 2
+# # of Masters
+mwfact = 0.5
+# Masters/Slaves get equal screen size
+inner-gaps = 10
+outer-gaps = 15
+
+[input.keyboard]
+layout = "us"
+repeat-rate = 25
+repeat-delay = 500
+
+[keybinds]
+# Keys
+# Brightness down (F6)
+#"XF86MonBrightnessDown" 
+#f6 = "exec brightnessctl set 5%-"
+# Brightness up (F7)
+#"XF86MonBrightnessUp" 
+#f7 = "exec brightnessctl set 5%+"
+# Misc
+Super-r = {action = "run-command", arg = "kickoff" }
+Super-m = "quit"
+Super-Return = { action = "run-command", arg = "alacritty" }
+Super-p = { action = "run-command", arg = "animolauncher" }
+Super-q = "close-focused-window"
+Super-Ctrl-r = "reload-config"
+Super-Alt-r = { action = "run-command", arg = "pkill animolauncher" }
+# Window focus
+Super-j = "focus-next-window"
+Super-k = "focus-previous-window"
+Super-Ctrl-j = "focus-next-output"
+Super-Ctrl-k = "focus-previous-output"
+
+# Window management
+#Super-m = "maximize-focused-window"
+Super-f = "fullscreen-focused-window"
+Super-Shift-c = "close-focused-window"
+Super-Ctrl-Space = "float-focused-window"
+Super-Shift-j = "swap-with-next-window"
+Super-Shift-k = "swap-with-previous-window"
+
+# Layout adjustments
+Super-Space = "select-next-layout"
+Super-Shift-Space = "select-previous-layout"
+Super-h = { action = "change-mwfact", arg = -0.1 }
+Super-l = { action = "change-mwfact", arg = +0.1 }
+Super-Shift-h = { action = "change-nmaster", arg = +1 }
+Super-Shift-l = { action = "change-nmaster", arg = -1 }
+Super-i = { action = "change-window-proportion", arg = +0.5 }
+Super-o = { action = "change-window-proportion", arg = -0.5 }
+
+# Workspaces (Finally)
+Super-1 = { action = "focus-workspace", arg = 0 }
+Super-2 = { action = "focus-workspace", arg = 1 }
+Super-3 = { action = "focus-workspace", arg = 2 }
+Super-4 = { action = "focus-workspace", arg = 3 }
+Super-5 = { action = "focus-workspace", arg = 4 }
+Super-6 = { action = "focus-workspace", arg = 5 }
+Super-7 = { action = "focus-workspace", arg = 6 }
+Super-8 = { action = "focus-workspace", arg = 7 }
+Super-9 = { action = "focus-workspace", arg = 8 }
+
+# Sending windows to workspaces (LESS GOOOO)
+Super-Shift-1 = { action = "send-to-workspace", arg = 0 }
+Super-Shift-2 = { action = "send-to-workspace", arg = 1 }
+Super-Shift-3 = { action = "send-to-workspace", arg = 2 }
+Super-Shift-4 = { action = "send-to-workspace", arg = 3 }
+Super-Shift-5 = { action = "send-to-workspace", arg = 4 }
+Super-Shift-6 = { action = "send-to-workspace", arg = 5 }
+Super-Shift-7 = { action = "send-to-workspace", arg = 6 }
+Super-Shift-8 = { action = "send-to-workspace", arg = 7 }
+Super-Shift-9 = { action = "send-to-workspace", arg = 8 }
+
+[mousebinds]
+Super-Left = "swap-tile"
+Super-Right = "resize-tile"
+
+[decorations]
+decoration-mode = "force-server-side"
+
+[decorations.border]
+thickness = 2
+radius = 10
+focused-color = "#d41e06"
+normal-color = "222230"
+
+[decorations.shadow]
+color = "black"
+floating-only = false
+
+[decorations.blur]
+disable = true
+passes = 2
+radius = 10
+noise = 0.05
+
+[animations]
+disable = false
