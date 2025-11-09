@@ -1,0 +1,13 @@
+[Unit]
+Description=Fix Wi-Fi driver reload at boot
+After=network-pre.target
+Before=NetworkManager.service wpa_supplicant.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/sbin/modprobe -r iwlwifi
+ExecStartPost=/usr/sbin/modprobe iwlwifi
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
