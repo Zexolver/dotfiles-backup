@@ -1,0 +1,13 @@
+outputs = "All"
+position = "Top"
+enable_esc_key = true
+#app_launcher_cmd = ""
+
+[modules]
+left = [ "AppLauncher", "Workspaces" ]
+center = [ "Clock", "WindowTitle" ]
+right = [ [ "SystemInfo" ], [ "KeyboardLayout" ],  [ "MediaPlayer", "Privacy", "Settings" ] ]
+
+[appearance]
+#font_name = ""
+scale_factor = 1.2
